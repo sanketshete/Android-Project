@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sanket.hw6.courseManager">
+
+<LinearLayout
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Your Course" />
+
+    <ImageView
+        android:id="@+id/addCourseCm"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/add" />
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/noCourseTvCm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No course added !"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:visibility="gone"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/courseListRv">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

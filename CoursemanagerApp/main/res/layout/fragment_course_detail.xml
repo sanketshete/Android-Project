@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="21dp"
+        android:text="Title" />
+
+    <TextView
+        android:id="@+id/titleVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_marginStart="34dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/instrImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/defaultimage"
+        android:layout_marginStart="0dp"
+        android:layout_below="@+id/textView11"
+        android:layout_toEndOf="@+id/creditHr" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="35dp"
+        android:layout_toStartOf="@+id/instrImage"
+        android:text="Instructor Detail" />
+
+    <TextView
+        android:id="@+id/instrName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instrImage"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/titleVal"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Schedule"
+        android:layout_below="@+id/instrName"
+        android:layout_toStartOf="@+id/titleVal" />
+
+    <TextView
+        android:id="@+id/Dayval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView11"
+        android:layout_below="@+id/textView13"
+        android:layout_marginTop="17dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/timeVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Dayval"
+        android:layout_below="@+id/Dayval"
+        android:layout_marginTop="13dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_below="@+id/timeVal"
+        android:layout_marginTop="27dp"
+        android:text="Credit Hr" />
+
+    <TextView
+        android:id="@+id/creditHr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/textView16"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_toStartOf="@+id/instrName" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_marginBottom="13dp"
+        android:text="Semester" />
+
+    <TextView
+        android:id="@+id/semister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_alignStart="@+id/creditHr"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day"
+        android:layout_alignBaseline="@+id/Dayval"
+        android:layout_alignBottom="@+id/Dayval"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_alignTop="@+id/timeVal"
+        android:text="Time" />
+</RelativeLayout>
